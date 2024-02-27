@@ -18,7 +18,7 @@ output_executable="build/${chapter_num}-${exercise_num}"
 mkdir -p build
 
 # Compile the C file
-gcc -Wall -o "$output_executable" "$source_file"
+gcc -Wall -o "$output_executable" "$source_file" -lm
 
 # Check if compilation was successful
 if [ $? -eq 0 ]; then
